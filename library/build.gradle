@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    task makeJar(type: Jar) {
+        // 最终jar包的名称
+        archiveName = 'android-api-1.0.jar'
+        // 将module默认生成的jar打入jar包
+        from(project.zipTree('build/intermediates/bundles/release/classes.jar'))
+        // 将okhttputils(3个合并的jar)打入jar包
+        from(project.zipTree('build/intermediates/bundles/release/libs/anloq-ke-android-okhttp-1.0.jar'))
+        // 将httpdns库的Jar打入jar包
+        from(project.zipTree('build/intermediates/bundles/release/libs/alicloud-android-sdk-httpdns-1.0.10.jar'))
+        // 将阿里云httpdns域名解析库打入jar包
+        from(project.zipTree('build/intermediates/bundles/release/libs/alicloud-android-utils-1.0.1.jar'))
+        // 将Gson解析打入jar包
+        from(project.zipTree('build/intermediates/bundles/release/libs/gson-2.3.1.jar'))
+        // jar包输出路径
+        destinationDir = file('build/libs')
+    }
+    // 打jar包(Copy类型)
+    makeJar.dependsOn(build) //必须写的配置
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/alicloud-android-sdk-httpdns-1.0.10.jar')
+    compile files('libs/alicloud-android-utils-1.0.1.jar')
+    compile files('libs/anloq-ke-android-okhttp-1.0.jar')
+    compile files('libs/gson-2.3.1.jar')
+}
