@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://C:\Users\xin\Desktop\Download\RxOkhttp-master\RxOkhttp.iml" filepath="C:\Users\xin\Desktop\Download\RxOkhttp-master\RxOkhttp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RxOkhttp-master.iml" filepath="$PROJECT_DIR$/RxOkhttp-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\xin\Desktop\Download\RxOkhttp-master\app\app.iml" filepath="C:\Users\xin\Desktop\Download\RxOkhttp-master\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/http1.0/library.iml" filepath="$PROJECT_DIR$/http1.0/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/http2.0/http.iml" filepath="$PROJECT_DIR$/http2.0/http.iml" />
+      <module fileurl="file://C:\Users\xin\Desktop\Download\RxOkhttp-master\library\library.iml" filepath="C:\Users\xin\Desktop\Download\RxOkhttp-master\library\library.iml" />
+    </modules>
+  </component>
+</project>
