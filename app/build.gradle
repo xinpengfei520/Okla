@@ -1,7 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
+<<<<<<< HEAD
     compileSdkVersion 26
+=======
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+>>>>>>> a07180009b99e23c2cb2eca9698d332e04c5a1e2
     defaultConfig {
         applicationId "com.xpf.rxokhttp"
         minSdkVersion 16
@@ -23,7 +28,13 @@ dependencies {
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
+<<<<<<< HEAD
     compile 'com.android.support:appcompat-v7:26.1.0'
     testCompile 'junit:junit:4.12'
     implementation project(':http2.0')
+=======
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    testCompile 'junit:junit:4.12'
+    compile files('libs/android-api-1.0.jar')
+>>>>>>> a07180009b99e23c2cb2eca9698d332e04c5a1e2
 }

@@ -9,8 +9,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+<<<<<<< HEAD
             <option value="$PROJECT_DIR$/http1.0" />
             <option value="$PROJECT_DIR$/http2.0" />
+=======
+            <option value="$PROJECT_DIR$/library" />
+>>>>>>> a07180009b99e23c2cb2eca9698d332e04c5a1e2
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
