@@ -5,7 +5,7 @@ RxOkhttp
 update on 2017-11-29 : http 2.0
 
 
-##1.初始化
+## 1.初始化
 
 在Application中：
 
@@ -15,9 +15,9 @@ ApiClient.getInstance().init(this);
 
 提示：默认已经配置好**HttpDns**域名解析和**https**请求。
 
-##2.请求示例
+## 2.请求示例
 
-###2.1 GET请求
+### 2.1 GET请求
 
 ```
 	Api.request().get(url, new ApiRequestListener() {
@@ -33,7 +33,7 @@ ApiClient.getInstance().init(this);
         });
 ```
 
-###2.2 POST请求
+### 2.2 POST请求
 
 ```
 	Api.request().post(url, map, new ApiRequestListener() {

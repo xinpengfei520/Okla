@@ -12,7 +12,6 @@
     tools:context="com.xpf.rxokhttp.MainActivity">
 
     <Button
-<<<<<<< HEAD
         android:id="@+id/btnGet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -28,18 +27,6 @@
         android:background="@color/colorPrimary"
         android:text="POST"
         android:textColor="#FFFFFF" />
-=======
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onGet"
-        android:text="GET" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="onPost"
-        android:text="POST" />
->>>>>>> a07180009b99e23c2cb2eca9698d332e04c5a1e2
 
     <TextView
         android:id="@+id/tvResult"
