@@ -1,11 +1,6 @@
-# RxOkhttp
+# Okla
 
-RxOkhttp
-
-update on 2017-11-29 : http 2.0
-
-update on 2018-03-28 : http 2.0 add overload method.
-
+从此，网络请求只需两步！！！
 
 ## 1.初始化
 
@@ -15,7 +10,7 @@ update on 2018-03-28 : http 2.0 add overload method.
 ApiClient.getInstance().init(this);
 ```
 
-提示：默认已经配置好**HttpDns**域名解析和**https**请求。
+提示：默认已经配置好 **HttpDns** 域名解析和 **https** 请求。
 
 ## 2.请求示例
 
@@ -72,4 +67,36 @@ ApiClient.getInstance().init(this);
                         Log.e("TAG", "error===" + ex);
                     }
                 });
+```
+
+## Bugs Report
+
+If you find any bug when using Okla, please report **[here](https://github.com/xinpengfei520/Okla/issues/new)**. Thanks for helping us making better.
+
+## Change logs
+
+### 2.0.1
+
+ - update on 2018-03-28 add post json overload method.
+
+### 2.0.0
+
+ - release okla 2.0.0 on 2017-11-29
+
+## LICENSE
+
+```
+   Copyright Copyright (C) 2016 x-sir , Okla Framework Open Source Project
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
 ```
