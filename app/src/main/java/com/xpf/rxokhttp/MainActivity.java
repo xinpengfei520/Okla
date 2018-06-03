@@ -2,7 +2,6 @@ package com.xpf.rxokhttp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-<<<<<<< HEAD
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -11,9 +10,6 @@ import android.widget.TextView;
 
 import com.anloq.http.Api;
 import com.anloq.http.ApiRequestListener;
-import android.util.Log;
-import android.view.View;
-import android.widget.TextView;
 
 import java.util.HashMap;
 

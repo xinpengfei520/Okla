@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 include ':app', ':http1.0', ':http2.0'
-=======
-include ':app', ':library'
->>>>>>> a07180009b99e23c2cb2eca9698d332e04c5a1e2
