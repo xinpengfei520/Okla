@@ -2,7 +2,7 @@ package com.xpf.rxokhttp;
 
 import android.app.Application;
 
-import com.anloq.http.ApiClient;
+import com.xpf.http.ApiClient;
 
 /**
  * Created by xpf on 2017/11/7 :)
