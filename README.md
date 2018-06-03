@@ -21,15 +21,15 @@ ApiClient.getInstance().init(this);
 ```
 	Api.request()
 		.get(url, new ApiRequestListener() {
-            @Override
-            public void onSuccess(String result) {
-                Log.e("TAG" + i, "success===" + result);
-            }
-
-            @Override
-            public void onError(String ex) {
-                Log.e("TAG", "error===" + ex);
-            }
+		            @Override
+		            public void onSuccess(String result) {
+		                Log.e("TAG" + i, "success===" + result);
+		            }
+		
+		            @Override
+		            public void onError(String ex) {
+		                Log.e("TAG", "error===" + ex);
+		            }
         });
 ```
 
@@ -40,15 +40,15 @@ ApiClient.getInstance().init(this);
 ```
 	Api.request()
 		.post(url, map, new ApiRequestListener() {
-                @Override
-                public void onSuccess(String result) {
-                    Log.e("TAG", "success===" + result);
-                }
-
-                @Override
-                public void onError(String ex) {
-                    Log.e("TAG", "error===" + ex);
-                }
+	                @Override
+	                public void onSuccess(String result) {
+	                    Log.e("TAG", "success===" + result);
+	                }
+	
+	                @Override
+	                public void onError(String ex) {
+	                    Log.e("TAG", "error===" + ex);
+	                }
             });
 ```
 
