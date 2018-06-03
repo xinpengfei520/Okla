@@ -83,6 +83,26 @@ If you find any bug when using Okla, please report **[here](https://github.com/x
 
  - release okla 2.0.0 on 2017-11-29
 
+## Proguard
+
+```
+	#okla
+	-dontwarn com.xpf.http.**
+	-keep class com.xpf.http.**{*;}
+
+	#okhttputils
+	-dontwarn com.zhy.http.**
+	-keep class com.zhy.http.**{*;}
+	
+	#okhttp
+	-dontwarn okhttp3.**
+	-keep class okhttp3.**{*;}
+	
+	#okio
+	-dontwarn okio.**
+	-keep class okio.**{*;}
+```
+
 ## LICENSE
 
 ```
