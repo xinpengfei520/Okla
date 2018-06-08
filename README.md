@@ -9,7 +9,7 @@
 在Application中：
 
 ```
-ApiClient.getInstance().init(this);
+OklaClient.getInstance().init(this);
 ```
 
 提示：默认已经配置好 **HttpDns** 域名解析和 **https** 请求。
@@ -19,7 +19,7 @@ ApiClient.getInstance().init(this);
 ### 2.1 GET请求
 
 ```
-	Api.request()
+	Okla.request()
 		.get(url, new ApiRequestListener() {
 		            @Override
 		            public void onSuccess(String result) {
@@ -38,7 +38,7 @@ ApiClient.getInstance().init(this);
 此种方式支持将map键值对传入，内部进行Json序列化转换，只支持简单的数据类型，不支持Value为集合或者数组的情况！
 
 ```
-	Api.request()
+	Okla.request()
 		.post(url, map, new ApiRequestListener() {
 	                @Override
 	                public void onSuccess(String result) {
@@ -57,7 +57,7 @@ ApiClient.getInstance().init(this);
 此种方式是为了弥补2.2中的缺陷，使用此种方式可以使用第三方框架，如 **Gson** 等，现将Post的内容转换为Json串之后再传入请求网络。
 
 ```
-	Api.request()
+	Okla.request()
 		.post(url, postJson, new ApiRequestListener() {
                     @Override
                     public void onSuccess(String result) {

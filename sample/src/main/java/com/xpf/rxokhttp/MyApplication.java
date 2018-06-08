@@ -2,7 +2,7 @@ package com.xpf.rxokhttp;
 
 import android.app.Application;
 
-import com.xpf.http.ApiClient;
+import com.xpf.http.OklaClient;
 
 /**
  * Created by xpf on 2017/11/7 :)
@@ -14,8 +14,7 @@ public class MyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        // 初始化api网络请求
-        //OkhttpApiClient.init(this);// http1.0
-        ApiClient.getInstance().init(this); // http2.0
+        // 初始化 OklaClient
+        OklaClient.getInstance().init(this);
     }
 }

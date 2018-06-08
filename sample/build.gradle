@@ -25,6 +25,5 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:26.1.0'
     testImplementation 'junit:junit:4.12'
-    //implementation project(':http1.0')
-    implementation project(':http2.0')
+    implementation project(':okla-library')
 }
