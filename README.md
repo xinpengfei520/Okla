@@ -1,8 +1,29 @@
-# Okla
+# Okla [![](https://jitpack.io/v/xinpengfei520/Okla.svg)](https://jitpack.io/#xinpengfei520/Okla)
 
 ![image](https://github.com/xinpengfei520/RxOkhttp/blob/master/sample/src/main/res/drawable/okla_logo.png)
 
 从此，网络请求只需两步！！！
+
+## Step 1:
+
+in your project build.gradle:
+
+```
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+## Step 2:
+
+in your module build.gradle dependencies:
+
+```
+implementation 'com.github.xinpengfei520:Okla:<latest-version>'
+```
 
 ## 1.初始化
 
@@ -77,13 +98,19 @@ If you find any bug when using Okla, please report **[here](https://github.com/x
 
 ## Change logs
 
-### 2.0.1
+### 1.5
+
+- fix some bugs;
+- upload jitpack repositories;
+- optimized code;
+
+### 1.2
 
  - update on 2018-03-28 add post json overload method.
 
-### 2.0.0
+### 1.0
 
- - release okla 2.0.0 on 2017-11-29
+ - release okla 1.0 on 2017-11-29
 
 ## Proguard
 
