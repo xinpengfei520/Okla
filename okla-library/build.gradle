@@ -1,23 +1,15 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.github.dcendents.android-maven'
 
-repositories {
-    mavenCentral()
-    google()
-    jcenter()
-    maven { url "https://jitpack.io" }
-}
-
 group = 'com.github.xinpengfei520'
-version = '1.4'
 
 android {
     compileSdkVersion 27
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 4
-        versionName "1.4"
+        versionCode 5
+        versionName "1.5"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
@@ -40,32 +32,7 @@ dependencies {
     })
     implementation 'com.android.support:appcompat-v7:27.1.0'
     testImplementation 'junit:junit:4.12'
-    api 'com.zhy:okhttputils:2.6.2'
-    api files('libs/alicloud-android-sdk-httpdns-1.0.10.jar')
-    api files('libs/alicloud-android-utils-1.0.1.jar')
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation files('libs/alicloud-android-sdk-httpdns-1.0.10.jar')
+    implementation files('libs/alicloud-android-utils-1.0.1.jar')
 }
-
-//task sourcesJar(type: Jar) {
-//    classifier = 'sources'
-//    from android.sourceSets.main.java.sourceFiles
-//}
-//
-//task javadoc(type: Javadoc) {
-//    source = android.sourceSets.main.java.sourceFiles
-//    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
-//}
-//
-//task javadocJar(type: Jar, dependsOn: javadoc) {
-//    classifier = 'javadoc'
-//    from javadoc.destinationDir
-//}
-
-//task classesJar(type: Jar) {
-//    from "$buildDir/intermediates/classes/release"
-//}
-//
-//artifacts {
-//    //archives classesJar
-//    archives javadocJar
-//    archives sourcesJar
-//}
