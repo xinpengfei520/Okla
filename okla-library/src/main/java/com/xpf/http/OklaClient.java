@@ -23,7 +23,6 @@ import okhttp3.OkHttpClient;
  * Created by xpf on 2017/9/22 :)
  * Function: OklaClient config initialize
  */
-
 public class OklaClient {
 
     private static final OklaClient instance = new OklaClient();
@@ -38,7 +37,7 @@ public class OklaClient {
     /**
      * initialize network request config.
      *
-     * @param context
+     * @param context context
      */
     public void init(Context context) {
         initOkhttpClient(context);
@@ -47,7 +46,7 @@ public class OklaClient {
     /**
      * initialize okhttp client config
      *
-     * @param context
+     * @param context context
      */
     private void initOkhttpClient(Context context) {
         if (context == null) return;
@@ -70,7 +69,7 @@ public class OklaClient {
     /**
      * https SSL identify verify
      *
-     * @return
+     * @return SSLSocketFactory object.
      */
     private static SSLSocketFactory getSSLSocketFactory() {
         try {

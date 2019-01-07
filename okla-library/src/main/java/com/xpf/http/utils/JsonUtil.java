@@ -15,18 +15,20 @@ import java.util.Map;
 
 public class JsonUtil {
 
+    private static final String TAG = "JsonUtil";
+
     /**
      * map convert to json string.
      *
-     * @param map
-     * @return
+     * @param map 参数键值对
+     * @return json string
      */
     public static String toJson(HashMap<String, Object> map) {
         if (map != null && map.size() > 0) {
             JSONObject loginObject = new JSONObject();
             // 通过Map.entrySet遍历key和value"
             for (Map.Entry<String, Object> entry : map.entrySet()) {
-                Log.e("TAG", "key= " + entry.getKey() + " and value= " + entry.getValue());
+                Log.e(TAG, "key= " + entry.getKey() + " and value= " + entry.getValue());
                 try {
                     loginObject.put(entry.getKey(), entry.getValue());
                 } catch (JSONException e1) {

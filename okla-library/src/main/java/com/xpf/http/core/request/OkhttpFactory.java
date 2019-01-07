@@ -13,14 +13,13 @@ import okhttp3.MediaType;
  * Created by xpf on 2017/10/24 :)
  * Function:
  */
-
 public class OkhttpFactory {
 
     /**
      * okhttp get request.
      *
-     * @param url
-     * @param listener
+     * @param url      result callback.
+     * @param listener result callback.
      */
     public static void get(String url, ApiRequestListener listener) {
         OkHttpUtils
@@ -33,9 +32,9 @@ public class OkhttpFactory {
     /**
      * okhttp post request.
      *
-     * @param url
-     * @param map
-     * @param listener
+     * @param url      request url.
+     * @param map      map params.
+     * @param listener result callback.
      */
     public static void post(String url, HashMap<String, Object> map, ApiRequestListener listener) {
         OkHttpUtils
@@ -47,12 +46,12 @@ public class OkhttpFactory {
                 .execute(new RequestStringCallback(listener));
     }
 
-	/**
+    /**
      * okhttp post request (overload method).
      *
-     * @param url
-     * @param json
-     * @param listener
+     * @param url      request url.
+     * @param json     post json body
+     * @param listener result callback.
      */
     public static void post(String url, String json, ApiRequestListener listener) {
         OkHttpUtils
