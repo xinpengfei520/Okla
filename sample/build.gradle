@@ -26,5 +26,5 @@ dependencies {
     implementation 'com.android.support:appcompat-v7:27.1.0'
     testImplementation 'junit:junit:4.12'
     implementation project(':okla-library')
-    //implementation 'com.github.xinpengfei520:Okla:1.1'
+    //implementation 'com.github.xinpengfei520:Okla:1.2'
 }
